@@ -1,0 +1,119 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#kuis-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+#timer, #skor {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+#timer {
+  color: #ff4d4f;
+}
+
+#skor {
+  color: #52c41a;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 2em;
+}
+
+#soal {
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+#jawaban {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+#jawaban button {
+  background-color: #1890ff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1em;
+  min-width: 120px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#jawaban button:hover {
+  background-color: #40a9ff;
+  transform: scale(1.05);
+}
+
+#hasil {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #333;
+  animation: fadeIn 0.8s ease-in;
+}
+
+#restart-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#restart-btn:hover {
+  background-color: #ff8265;
+}
+
+#progress-bar-container {
+  width: 100%;
+  background-color: #eee;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  height: 10px;
+}
+
+#progress-bar {
+  width: 0%;
+  height: 100%;
+  background-color: #1890ff;
+  transition: width 0.5s ease;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kuis Interaktif</title>
+  <link rel="stylesheet" href="kuis.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <h1><i class="fas fa-question-circle"></i> Kuis Pengetahuan Umum</h1>
+  <div id="kuis-container">
+    <div id="progress-bar-container">
+      <div id="progress-bar"></div>
+    </div>
+    <div id="timer"><i class="fas fa-clock"></i> <span>Waktu:</span></div>
+    <div id="skor"><i class="fas fa-star"></i> <span>Skor:</span></div>
+    <div id="soal"></div>
+    <div id="jawaban"></div>
+    <div id="hasil"></div>
+    <button id="restart-btn"><i class="fas fa-redo"></i> Mulai Ulang</button>
+  </div>
+
+  <audio id="benar-audio" src="benar.mp3" preload="auto"></audio>
+  <audio id="salah-audio" src="salah.mp3" preload="auto"></audio>
+
+  <script src="kuis.js"></script>
+</body>
+</html>
